@@ -20,7 +20,7 @@ if(!$query->execute())
 	<div class="alert alert-warning" role="alert">
 		You have not set an email yet! You can do that <a href="settings.php">here</a>.
 	</div>
-
+<!-- aanpassing voor git -->
 <?php } ?>
 
 <div class="jumbotron jumbotron-fluid">
@@ -34,7 +34,7 @@ if(!$query->execute())
 				<p class="lead">There are currently no tests available for your skill level.</p>
 			<?php } ?>
 
-		</center>
+ 		</center>
 	</div>
 </div>
 
