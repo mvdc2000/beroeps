@@ -1,0 +1,179 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700";
+body {
+    font-family: 'Roboto';
+    background: #fafafa;
+	font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.push-left {
+	padding-left: 20px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a .fas {
+	cursor: pointer;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+	border-top: 5px solid #57ADE4;
+   	width: 14%;
+    background: #3f3f3f;
+    color: #6F6F6F;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #6F6F6F;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #3f3f3f;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #6F6F6F;
+    background: #3f3f3f;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.fa-bars, .fa-times {
+	visibility:  hidden;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+.rounded {
+	padding: 1%;
+	width: 65%;
+	border: solid #A8A8A8;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+	.fa-bars, .fa-times {
+		visibility: visible;
+		float: right;
+		padding: 1.5%;
+		font-size: 45px;
+	}
+	
+	.wrapper {
+		display: block;
+	}
+	
+	#sidebar {
+		width: 100%;
+		min-height: 60px;
+		height: auto;
+		font-size: 25px;
+	}
+	
+	.components {
+		display: none;
+	}
+	
+	.componentsopennav, li {
+		padding: 0;
+		margin: auto;
+		clear: both;
+		list-style: none;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	.opennav, li{
+		list-style: none;
+	}
+	
+	.opennav, li:first-child {
+		margin: 11% 0 0 0;
+	}
+}
+
+
+
+@media screen and (min-width: 900px){
+	.componentsopennav, li nav {
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+	
+}
